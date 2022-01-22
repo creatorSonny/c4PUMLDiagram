@@ -2,7 +2,7 @@
 For application & threat modeling
 
 ### Context Template
-![Context Diagram](./assets/c4DiagramTemplate_Context.png)
+![Context Diagram](./assets/c4DiagramTemplate_Context1.png)
 
 ### Container Template
 
