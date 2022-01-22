@@ -6,16 +6,18 @@ LAYOUT_WITH_LEGEND()
 LAYOUT_LEFT_RIGHT()
 
 ' Print Diagram Title
-title System Context diagram for Patient Portal System \n
+title System Context Diagram for Patient Portal System \n
 
 ' Assign Variables
 Person_Ext(patient, "Patient \n [Person]", "A patient of a clinic with a patient user account.")
+Person(records, "Records Personnel \n [Person]", "Uploads patient information.")
 System(patient_system, "Patient Portal \n [System]", "Allows customers to view information about test results and appointments.")
-System_Ext(mail_system, "E-mail System \n [System]", "Third-Party Email System.")
+System_Ext(mail_system, "E-mail System \n [System]", "Third-Party e-mail system.")
 
 ' Print Relationships
+Rel(records, patient_system, "Uploads patient info")
 Rel(patient, patient_system, "Uses")
-Rel(patient_system, mail_system, "Sends e-mails")
-Rel(patient, mail_system,"Reads email")
+Rel(patient_system, mail_system, "Sends notification e-mail")
+Rel(patient, mail_system,"Reads e-mail")
 
 @enduml
