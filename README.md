@@ -1,5 +1,5 @@
 # C4 Plant UML Diagram
-For application & threat modeling
+C4 plant Unified Modeling Language (UML) for application visualizaton and threat modeling.
 
 ### Context Template
 ![Context Diagram](./assets/c4DiagramTemplate_Context3.png)
