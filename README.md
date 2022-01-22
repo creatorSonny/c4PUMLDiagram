@@ -1,4 +1,12 @@
-# C4 Plant UML Diagram for Threat Modeling
+# C4 Plant UML Diagram
+For application & threat modeling
 
-Plant UML
-C4 Diagramming
+### Context Template
+
+### Container Template
+
+### Component Template
+
+### References
+- Plant UML - https://github.com/plantuml-stdlib/C4-PlantUML
+- C4 Diagram - https://c4model.com/
