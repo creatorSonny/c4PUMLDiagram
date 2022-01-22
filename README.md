@@ -6,6 +6,8 @@ C4 plant Unified Modeling Language (UML) for application visualizaton and threat
 ![Context Diagram](./assets/c4DiagramTemplate_Context3.png)
 
 ### Container Template
+[Context Diagram](c4DiagramTemplate_Container.puml)
+![Context Diagram](./assets/c4DiagramTemplate_Container.png)
 
 ### Component Template
 
