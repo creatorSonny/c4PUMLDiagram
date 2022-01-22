@@ -1,0 +1,21 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+' Print Layout
+LAYOUT_WITH_LEGEND()
+LAYOUT_LEFT_RIGHT()
+
+' Print Diagram Title
+title System Context diagram for Patient Portal System \n
+
+' Assign Variables
+Person_Ext(patient, "Patient \n [Person]", "A patient of a clinic with a patient user account.")
+System(patient_system, "Patient Portal \n [System]", "Allows customers to view information about test results and appointments.")
+System_Ext(mail_system, "E-mail System \n [System]", "Third-Party Email System.")
+
+' Print Relationships
+Rel(patient, patient_system, "Uses")
+Rel(patient_system, mail_system, "Sends e-mails")
+Rel(patient, mail_system,"Reads email")
+
+@enduml
